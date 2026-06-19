@@ -9,7 +9,7 @@
 
 ## About
 
-This repository contains the source and compiled PDF of my academic curriculum vitae, maintained for PhD applications targeting top-tier research universities in South Korea (KAIST, SNU, POSTECH) and internationally.
+This repository contains the source and compiled PDF of my academic curriculum vitae, maintained for PhD applications targeting top-tier research universities.
 
 I am an M.Sc. candidate in Computer Science at **Chongqing University** (Sep 2023 – Jun 2026), advised by Dr. Guangchao Yang. My research sits at the intersection of **physics-informed deep learning** and **computational medical imaging** — developing principled generative models that integrate physical acquisition operators directly into the learning objective for low-dose CT reconstruction.
 
