@@ -1,4 +1,4 @@
-# Md Imam Ahasan — Academic CV
+# Md Imam Ahasan - Academic CV
 
 [![PDF](https://img.shields.io/badge/CV-Download%20PDF-1F4E79?style=flat-square&logo=adobeacrobatreader&logoColor=white)](./main.pdf)
 [![Built with LaTeX](https://img.shields.io/badge/Built%20with-XeLaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://www.latex-project.org/)
@@ -11,16 +11,16 @@
 
 This repository contains the source and compiled PDF of my academic curriculum vitae, maintained for PhD applications targeting top-tier research universities.
 
-I am an M.Sc. candidate in Computer Science at **Chongqing University** (Sep 2023 – Jun 2026), advised by Dr. Guangchao Yang. My research sits at the intersection of **physics-informed deep learning** and **computational medical imaging** — developing principled generative models that integrate physical acquisition operators directly into the learning objective for low-dose CT reconstruction.
+I am an M.Sc. candidate in Computer Science at **Chongqing University** (Sep 2023 - Jun 2026), advised by Dr. Guangchao Yang. My research sits at the intersection of **physics-informed deep learning** and **computational medical imaging** - developing principled generative models that integrate physical acquisition operators directly into the learning objective for low-dose CT reconstruction.
 
 ---
 
 ## Research Interests
 
-- **Physics-Informed Generative Models** — cold diffusion, score-based, and Bayesian diffusion frameworks with Poisson-noise forward operators
-- **Inverse Problems in Medical Imaging** — low-dose CT reconstruction, sinogram-domain processing, zero-shot cross-domain generalization
-- **Trustworthy AI for Healthcare** — uncertainty-aware inference, explainability, and robustness under distribution shift
-- **Medical Image Segmentation** — retinal vasculature, skin lesions, mammography
+- **Physics-Informed Generative Models** - cold diffusion, score-based, and Bayesian diffusion frameworks with Poisson-noise forward operators
+- **Inverse Problems in Medical Imaging** - low-dose CT reconstruction, sinogram-domain processing, zero-shot cross-domain generalization
+- **Trustworthy AI for Healthcare** - uncertainty-aware inference, explainability, and robustness under distribution shift
+- **Medical Image Segmentation** - retinal vasculature, skin lesions, mammography
 
 ---
 
