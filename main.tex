@@ -1,0 +1,315 @@
+\documentclass[11pt,a4paper]{article}
+
+% ===================== PACKAGES =====================
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{fontawesome5}
+
+% ===================== FONTS =====================
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\setmathfont{TeX Gyre Termes Math}
+
+% ===================== COLORS =====================
+\definecolor{Accent}{HTML}{1F4E79}
+\definecolor{SoftGray}{HTML}{555555}
+\definecolor{NameGray}{HTML}{666666}
+
+% ===================== PDF / LINKS =====================
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Accent,
+  urlcolor=Accent,
+  citecolor=Accent,
+  pdftitle={Md Imam Ahasan - Academic CV},
+  pdfauthor={Md Imam Ahasan}
+}
+\urlstyle{same}
+
+% ===================== GLOBAL SPACING =====================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\renewcommand{\baselinestretch}{1.02}
+\raggedbottom
+\emergencystretch=3em
+
+% ===================== SECTION STYLING =====================
+\titleformat{\section}
+  {\large\bfseries\sffamily\color{Accent}}
+  {}{0pt}{}
+  [\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+% ===================== LISTS =====================
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  topsep=0pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+\setlist[description]{
+  itemsep=4pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+% ===================== CUSTOM COMMANDS =====================
+\newcommand{\EntryHeadingTwo}[4]{%
+  \textbf{#1}\hfill \textbf{#2}\\
+  \textit{#3}\hfill \textit{#4}\\
+}
+
+% Contribution note (gray, indented, within a pub item)
+\newcommand{\PubNote}[1]{%
+  \\[1pt]{\small\color{SoftGray}$\triangleright$\enspace#1}%
+}
+
+% Publication subsection heading
+\newcommand{\pubsub}[1]{\vspace{4pt}\textbf{#1}\vspace{1pt}}
+
+% ------- Document -------
+\begin{document}
+
+% ===================== HEADER =====================
+\begin{center}
+  {\fontsize{34}{38}\selectfont\sffamily
+    \textcolor{NameGray}{Md Imam }\textbf{\textcolor{black}{Ahasan}}
+  }\par
+  \vspace{2pt}
+  {\small\itshape\color{SoftGray}
+    Chongqing University, Huxi Campus, Shapingba District, Chongqing 401331, China
+  }\par
+  \vspace{2pt}
+  {\small\sffamily\color{SoftGray}
+    \faPhone\ (+86)\,13008309195 \enspace\textbar\enspace
+    \faEnvelope\ \href{mailto:emamahasane@gmail.com}{emamahasane@gmail.com} \enspace\textbar\enspace
+    \faGithub\ \href{https://github.com/imamahasane}{imamahasane} \enspace\textbar\enspace
+    \faLinkedin\ \href{https://www.linkedin.com/in/imamahasane}{imamahasane}
+  }\par
+\end{center}
+
+% ===================== EDUCATION =====================
+\section*{Education}
+
+\EntryHeadingTwo
+  {Chongqing University (CQU)}{Chongqing, China}
+  {M.Sc.\ in Computer Science}{Sep 2023 -- Jun 2026}
+{\small GPA: 83.4\,/\,100\enspace{\color{SoftGray}Top\,1\% of international cohort}}\newline
+{\small\textit{Thesis:} ``Research on Low-Dose Computed Tomography Image Reconstruction'' -- Developed DACD and GenDiff, two physics-guided diffusion frameworks for LDCT reconstruction. Supervisor: Dr.\ Guangchao Yang, College of Computer Science, CQU}
+
+\vspace{3pt}
+
+\EntryHeadingTwo
+  {Daffodil International University (DIU)}{Dhaka, Bangladesh}
+  {B.Sc.\ in Computer Science and Engineering}{Sep 2017 -- Sep 2021}
+{\small GPA: 71.5\,/\,100}\newline
+{\small\textit{Thesis:} ``Gronthon: Bangla PDF to Text Conversion Application'' -- Developed an end-to-end OCR pipeline for Bengali script digitization. Supervisor: Dr.\ Md Zahid Hasan, Computer Science and Technology, DIU}
+
+% ===================== PUBLICATIONS =====================
+\section*{Publications}
+
+{\small\color{SoftGray}\textit{%
+  \textbf{(FA)} = First Author.\enspace
+  ${}^\dagger$ = Corresponding Author.\enspace
+  [C] = Conference Paper.\enspace
+  [J] = Journal Article.\enspace
+  [R] = Under Review.\enspace
+}}
+
+\pubsub{Peer-Reviewed Conference/Journal Papers}
+
+\begin{description}[leftmargin=3.0em, labelwidth=2.6em, labelsep=0.4em,
+                    itemsep=5pt, topsep=2pt, parsep=0pt]
+
+\item[{\textbf{[C1]}}] \textbf{(FA)} \textbf{Md Imam Ahasan}, Guangchao Yang$^\dagger$,
+  A F M Abdun Noor, S M Hasan Mahmud.
+  ``Dose-Aware Cold Diffusion with Physics Consistency for Generalizable Low-Dose CT
+  Reconstruction.'' \textit{Intl.\ Joint Conf.\ on Neural Networks (IJCNN 2026).}
+  \textbf{[Accepted\,$\cdot$\,CCF-C]}
+
+\item[{\textbf{[C2]}}] A F M Abdun Noor, \textbf{Md Imam Ahasan},
+  Mohammad Azam Khan, Guangchao Yang$^\dagger$.
+  ``GeGLUNet: Structural Retinal Vessel Segmentation via Attention-Gated GeGLU and
+  Contrastive Supervision.'' \textit{Conf.\ on Pattern Recognition and Computer Vision
+  (PRCV 2025).}
+  \href{https://doi.org/10.1007/978-981-95-5631-1_35}%
+       {\small 10.1007/978-981-95-5631-1\_35}.
+  \textbf{[Published\,$\cdot$\,CCF-C]}
+
+\item[{\textbf{[C3]}}] Md Mahfuzur Rahman, Pengzhan Zhou$^\dagger$,
+  A F M Abdun Noor, \textbf{Md Imam Ahasan}.
+  ``MTF-Net: Multi-Modal Temporal Feature Fusion Network for Pedestrian Intention
+  Prediction.'' \textit{Intl.\ Conf.\ on Cloud and Network Computing (ICCNC 2026).}
+  \textbf{[Accepted\,$\cdot$\,EI]}
+
+\item[{\textbf{[C4]}}] Anum Malik, Mahnoor Buriro, Muhammad Younas Khan,
+  \textbf{Md Imam Ahasan}.
+  ``MoSSGate: Memory-Modulated State-Space Gating for Skin Lesion Segmentation.''
+  \textit{ICCNC 2026.} \textbf{[Accepted\,$\cdot$\,EI]}
+
+\item[{\textbf{[J1]}}] Ahtisham Waheed, Yunfei Yin$^\dagger$,
+  A F M Abdun Noor, \textbf{Md Imam Ahasan}.
+  ``Direction-Curvature Aware Feature Integration for Robust Lane Detection.''
+  \textit{Computers, Materials and Continua (CMC).} \textbf{[Accepted\,$\cdot$\,SCIE]}
+
+\end{description}
+
+\pubsub{Under Review}
+
+\begin{description}[leftmargin=3.0em, labelwidth=2.6em, labelsep=0.4em,
+                    itemsep=5pt, topsep=2pt, parsep=0pt]
+
+\item[{\textbf{[R1]}}] \textbf{(FA)} \textbf{Md Imam Ahasan}, Guangchao Yang$^\dagger$,
+  A F M Abdun Noor, S M Hasan Mahmud$^\dagger$.
+  ``GenDiff: A Dose and Anatomy Aware Diffusion Model with Structural Prior Refinement
+  for Low-Dose CT Reconstruction and Generalization.''
+  \textit{PeerJ Computer Science.} \textbf{[Under Review\,$\cdot$\,SCIE]}
+
+\item[{\textbf{[R2]}}] \textbf{(FA)} \textbf{Md Imam Ahasan}, Guangchao Yang$^\dagger$,
+  A F M Abdun Noor, Mohammad Azam Khan.
+  ``Physics-Conditioned Bayesian Diffusion Model for Low-Dose CT Reconstruction.''
+  \textit{IEEE Intl.\ Conf.\ on Bioinformatics and Biomedicine (BIBM 2026).}
+  \textbf{[Under Review\,$\cdot$\,CCF-B]}
+
+\item[{\textbf{[R3]}}] \textbf{(FA)} \textbf{Md Imam Ahasan}, Guangchao Yang$^\dagger$,
+  A F M Abdun Noor, Mohammad Azam Khan$^\dagger$.
+  ``LightGAN-LD: A Lightweight Generative Adversarial Network for Efficient Low-Dose CT
+  Reconstruction with Sinogram Encoding and Edge-Aware Learning.''
+  \textit{PeerJ Computer Science.} \textbf{[Under Review\,$\cdot$\,SCIE]}
+
+\item[{\textbf{[R4]}}] \textbf{(FA)} \textbf{Md Imam Ahasan},
+  A F M Abdun Noor, Kah Ong Michael Goh$^\dagger$, S M Hasan Mahmud$^\dagger$.
+  ``Toward Real-Time LDCT Reconstruction: A Sinogram-Encoded Lightweight GAN with
+  Measurement-Domain Noise Suppression.''
+  \textit{Computers, Materials and Continua (CMC).} \textbf{[Under Review\,$\cdot$\,SCIE]}
+
+\item[{\textbf{[R5]}}] A F M Abdun Noor, \textbf{Md Imam Ahasan},
+  Kah Ong Michael Goh$^\dagger$, S M Hasan Mahmud.
+  ``QBiLoF-U-Net: Bi-Context Location-Aware Feature Modeling for Joint Mammographic
+  Segmentation and Classification.''
+  \textit{Computer Modeling in Engineering and Sciences (CMES).}
+  \textbf{[Under Review\,$\cdot$\,SCIE]}
+
+\item[{\textbf{[R6]}}] Md Mahfuzur Rahman, Pengzhan Zhou$^\dagger$,
+  A F M Abdun Noor, \textbf{Md Imam Ahasan}.
+  ``Adaptive Cross-Modal Fusion with Sparse Attention for Pedestrian Crossing Intention
+  Prediction.'' \textit{PeerJ Computer Science.} \textbf{[Under Review\,$\cdot$\,SCIE]}
+
+\end{description}
+
+% ===================== RESEARCH EXPERIENCE =====================
+\section*{Research Experience}
+
+\EntryHeadingTwo
+  {Graduate Research Assistant -- Computer Vision Lab}{Chongqing University, China}
+  {Supervisor: Dr.\ Guangchao Yang, College of Computer Science}{Sep 2023 -- Jun 2026}
+\vspace{-8pt}
+\begin{itemize}
+  \item Designed \textbf{DACD}, a Poisson-thinning cold diffusion model with physics consistency achieving $+$1.20\,dB PSNR over SOTA and 3.3$\times$ faster inference. \textit{[IJCNN 2026, CCF-C - Accepted]}
+  \item Extended to \textbf{GenDiff} with dose-anatomy encoding and structural prior refinement for zero-shot generalization across unseen dose levels and anatomical domains. \textit{[PeerJ CS, SCIE - Under Review]}
+  \item Developed \textbf{LightGAN-LD} and \textbf{Physics-Conditioned Bayesian Diffusion} model for real-time LDCT reconstruction in collaboration with Dr.\ Mohammad Azam Khan (KAIST). \textit{[BIBM 2026, CCF-B; PeerJ CS, SCIE - Under Review]}
+\end{itemize}
+
+\vspace{3pt}
+
+\EntryHeadingTwo
+  {Graduate Research Assistant - Data Science Lab}{Daffodil International University, Bangladesh}
+  {Supervisor: Dr.\ Md Zahid Hasan, Computer Science and Technology}{Jun 2020 -- Jul 2021}
+\vspace{-8pt}
+\begin{itemize}
+  \item Developed and benchmarked deep learning pipelines for retinal vessel segmentation and skin lesion classification across standard public datasets, building foundational expertise in medical image analysis.
+  \item Co-developed \textbf{GeGLUNet}, a retinal vessel segmentation network via attention-gated GeGLU and contrastive supervision. \textit{[PRCV 2025, CCF-C - Published]}
+\end{itemize}
+
+% ===================== TEACHING & PROFESSIONAL =====================
+\section*{Teaching \& Professional Experience}
+
+\textbf{Lecturer, ICT:}\enspace Anupama Intl.\ School and College \hfill Dhaka, Bangladesh \enspace\textbar\enspace Dec 2021 -- Jun 2022
+
+\vspace{3pt}
+
+\textbf{Senior IT Support Engineer:}\enspace Surma Garments Ltd. \hfill Dhaka, Bangladesh \enspace\textbar\enspace Aug 2022 -- Jun 2023
+
+% ===================== AWARDS =====================
+\section*{Awards \& Honors}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{CQU Outstanding International Graduates 2026}
+    {\;\small\color{SoftGray}Awarded to top\,1\% of international graduates}
+    & Jun 2026 \\[2pt]
+  \textbf{3\textsuperscript{rd} Prize}, ``China in My Eyes'' Photography Contest
+    & Oct 2024 \\[2pt]
+  \textbf{Finalist}, Joy Bangla Youth Award
+    {\;\small\color{SoftGray}National recognition for social and community impact}
+    & Aug 2021 \\[2pt]
+  \textbf{Co-Founder}, Shopner Khoje Foundation (\textit{charitable organization})
+    & Feb 2017 -- Present \\
+\end{tabularx}
+
+% ===================== TECHNICAL SKILLS =====================
+\section*{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Programming}      & Python \\[2pt]
+  \textbf{DL Frameworks}    & PyTorch (custom training loops, mixed precision, multi-GPU),
+                               MONAI, scikit-learn \\[2pt]
+  \textbf{Domain Expertise} & Diffusion Models (cold diffusion, DDPM, score-based),
+                               GANs, Inverse Problems, CT\,/\,Sinogram Processing,
+                               Physics-Informed Deep Learning, Medical Image Segmentation,
+                               LDCT Reconstruction \\[2pt]
+  \textbf{Tools}            & Git, Linux, \LaTeX, Weights \& Biases (W\&B) \\
+\end{tabularx}
+
+% ===================== ACADEMIC SERVICE =====================
+\section*{Academic Service}
+
+\textbf{Peer Reviewer:}\enspace
+\textit{Engineering Applications of Artificial Intelligence} (EAAI),
+\textit{Systems \& Soft Computing},
+\textit{Journal of Agriculture and Food Research},
+PRCV {\small\color{SoftGray}\textit{2025}},
+IJCNN {\small\color{SoftGray}\textit{2026}}.
+
+\vspace{3pt}
+
+\textbf{Conference Volunteer:}\enspace
+2018 ICPC Asia Dhaka Regional Contest;\enspace
+6th Intl.\ Conf.\ on Electronic Engineering and Informatics
+{\small\color{SoftGray}\textit{2024}};\enspace
+IEEE Intl.\ Conf.\ on Electrical Energy Conversion Systems and Control
+{\small\color{SoftGray}\textit{2025}}.
+
+% ===================== REFERENCES =====================
+\section*{References}
+
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{Dr.\ Guangchao Yang}\\
+    College of Computer Science\\
+    Chongqing University, Chongqing, China\\
+    \href{mailto:gchao_yang@cqu.edu.cn}{gchao\_yang@cqu.edu.cn}\enspace\textbar\enspace
+    +86\,15923504788
+  \end{minipage}
+  &
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{Dr.\ Mohammad Azam Khan}\\
+    Kim Jaechul Graduate School of AI\\
+    Korea Advanced Institute of Science and Technology\\
+    \href{mailto:azamkhan@kaist.ac.kr}{azamkhan@kaist.ac.kr}
+  \end{minipage}
+\end{tabularx}
+
+\end{document}
